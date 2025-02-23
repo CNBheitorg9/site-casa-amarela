@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<audio autoplay="autoplay" controls="controls">
+        <source src="hino.mp3" type="hino/mp3" />
+        seu navegador não suporta HTML5
+        </audio>
+</body>
+</html>
