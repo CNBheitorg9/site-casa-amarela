@@ -1,32 +1,115 @@
 <!DOCTYPE html>
-<html lang= "pt-br">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casa de praia com vista para o mar, piscina e área gourmet">
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Casa Guará - Seu Paraíso na Praia</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Casa Guará</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comodidades">Comodidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    	<meta charset="UTF-8">
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1>Seja bem-vindo(a) à Casa Guará</h1>
+            <p>Seu paraíso na Praia de Morro Branco</p>
+            <a href="#contato" class="btn btn-primary btn-lg">Faça sua Reserva</a>
+        </div>
+    </header>
 
-    	<title>Surpresa</title>
+    <!-- About Section -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Casa Guará</h2>
+            <p class="text-center">Praia de Morro Branco, na região de Barra Grande - Cajueiro da Praia (PI)</p>
+            <p class="text-center">É conhecer e se apaixonar! A Casa Guará conta com uma linda vista para o mar, com 5 suítes com ar-condicionado e chuveiro elétrico, piscina com hidromassagem, grande área gourmet com churrasqueira e cervejeira, lavabo, quadra de beach tênis, lareira no jardim, 200 metros quadrados de varanda, cozinha e sala de estar bem equipadas, roupa de cama e banho, cozinheira e copeira.</p>
+        </div>
+    </section>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Amenities Section -->
+    <section id="comodidades" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Comodidades</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="amenity-card text-center">
+                        <i class="fas fa-umbrella-beach fa-3x mb-3"></i>
+                        <h3>100 metros da praia</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="amenity-card text-center">
+                        <i class="fas fa-swimming-pool fa-3x mb-3"></i>
+                        <h3>Piscina com hidromassagem</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="amenity-card text-center">
+                        <i class="fas fa-bed fa-3x mb-3"></i>
+                        <h3>5 suítes com ar-condicionado</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    </head>
+    <!-- Contact Section -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Faça sua Reserva</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p><i class="fas fa-phone me-2"></i>(86) 98141-1121</p>
+                    <p><i class="fas fa-envelope me-2"></i>casaguarapiaui@gmail.com</p>
+                    <a href="https://wa.me/5586981411121" class="btn btn-success btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>Reservar pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <body>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Casa Amarela. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-        <script src="js/bootstrap.min" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    	<a href="https://www.meutimao.com.br/noticias-do-corinthians">Últimas Notícias </a>
-        <br>
-    	<p> Calendário de jogos</a> </p>
-    	<p> <a href="https://www.meutimao.com.br/galerias-de-fotos-do-corinthians/">Galeria</a> </p>
-    	<link href="carousel.css"> </link>
-
-    	<ul>
-    		<li> <a href="titulos.html">TITULOS DO CORINthia SÉCULO 2000 </a> </li>
-			<li> <a href="Melhores_defesas_cassio_2012"> Melhores defesas cassio 2012</a> </li>
-    		 <li> <a href="https://media.tenor.com/It_uScpL9TQAAAAM/yurialberto.gif">YURI ALBERTO DESLIZANDO </a> </li>
-             <br>
-    	</ul>
-	</body>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

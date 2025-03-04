@@ -1,47 +1,172 @@
-<head>
-	<meta charset="utf-8">
-	<style type="text/css">
-	
-		html { 
-			font-size: 14px;
-			font-family: 'Open Sans', sans-serif; 
-		}
+/* Global Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
 
-		h1 { 
-			font-size: 60px;
-			text-align: center; 
-		}
-		
-		html { 
-			background-color: #363636; 
-		}
-		
-		body { 
-			width: 600px;
-			margin: 0 auto;
-			background-color: #00FFFF;
-			padding: 0 20px 20px 20px;
-			border: 5px solid black; 
-		}
-		
-		h1 { 
-			margin: 0;
-			padding: 20px 0;
-			color: #00539F;
-			text-shadow: 3px 3px 1px black; 
-		}
-		
-		.botao { 
-			font-size: 1.5em;
-			background: rgb(15, 7, 92);
-			border: 0;
-			margin-bottom: 1em;
-			color: #FFF;
-			padding: 0.2em 0.6em;
-			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-		}
-	
-	</style>
-	<title> Surpresa </title>
-</head>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 76px; /* Account for fixed navbar */
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: #25D366;
+    border-color: #25D366;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 5rem 0;
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Amenities */
+.amenity-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+}
+
+.amenity-card i {
+    color: var(--secondary-color);
+}
+
+/* Contact Section */
+#contato {
+    background-color: var(--light-color);
+}
+
+#contato p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#contato i {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content, section {
+    animation: fadeIn 1s ease-out;
+}
